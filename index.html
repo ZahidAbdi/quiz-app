@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Marvel Quiz App</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Create and Test your App Idea" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Marvel&display=swap"
+      rel="stylesheet"
+    />
+    <link href="main.css" rel="stylesheet" type="text/css" />
+    <script src="quiz.js"></script>
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <header role="banner" class="header">
+      <a href="index.html">
+        <img
+          class="marvelLogo"
+          src="images/marvelLogo.jpg"
+          alt=" the marvel logo"
+        />
+      </a>
+    </header>
+    <main>
+      <!--Start Page-->
+      <h1 class="topbar">Marvel Comics Quiz</h1>
+      <div class="start-page">
+        <p>
+          Think you know everything about Marvel Comics? Take the quiz to find
+          out!
+        </p>
+        <button value="start" tpye="start" class="start-button">
+          Lets Go!
+        </button>
+      </div>
+      <!--Question Page-->
+      <form class="questions">
+        <fieldset class="square">
+          <h2 class="question"></h2>
+          <div class="questions-selector"></div>
+          <div class="submit">
+            <button value="submit" type="submit" class="submit-button">
+              Submit
+            </button>
+          </div>
+        </fieldset>
+      </form>
+      <div class="questions">
+        <div class="next">
+          <button value="next" type="next" class="next-button">
+            Next Question
+          </button>
+        </div>
+        <p class="score">Score:</p>
+        <p class="question-number"></p>
+      </div>
+      <!--Feedback Page-->
+      <div class="end-quiz">
+        <p class="end-score"></p>
+        <p class="comment"></p>
+        <button value="retry" type="retry" class="retry-button">
+          Want to try again?
+        </button>
+      </div>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="main.js"></script>
+    <script src="questions.js"></script>
+  </body>
+</html>
